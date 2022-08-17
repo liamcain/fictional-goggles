@@ -15,15 +15,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: "18.x" # You might need to adjust this value to your own version
       - name: Bundle
         id: bundle
         run: |
           mkdir ${{ env.THEME_NAME }}
-          cp manifest.json styles.css ${{ env.THEME_NAME }}
+          cp manifest.json theme.css ${{ env.THEME_NAME }}
           zip -r ${{ env.THEME_NAME }}.zip ${{ env.THEME_NAME }}
       - name: Create Release
         id: create_release
