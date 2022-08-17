@@ -21,6 +21,8 @@ jobs:
           mkdir ${{ env.THEME_NAME }}
           cp manifest.json theme.css ${{ env.THEME_NAME }}
           zip -r ${{ env.THEME_NAME }}.zip ${{ env.THEME_NAME }}
+		  ls
+          echo "::set-output name=tag_name::$(git tag --sort version:refname | tail -n 1)"
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
