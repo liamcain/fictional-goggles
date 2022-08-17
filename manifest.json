@@ -1,7 +1,7 @@
 {
 	"id": "minimal",
 	"name": "Minimal",
-	"version": "1.0.0",
+	"version": "1.0.5",
 	"minAppVersion": "0.16.0",
 	"description": "Basically the default theme these days",
 	"author": "@kepano"
