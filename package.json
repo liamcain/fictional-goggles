@@ -1,5 +1,5 @@
 {
-    "name": "minimal",
+    "name": "windows-10-theme",
     "version": "1.0.7",
 	"scripts": {
 		"version": "node version-bump.mjs && git add manifest.json versions.json"
